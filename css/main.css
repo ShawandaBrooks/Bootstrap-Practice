@@ -1,45 +1,89 @@
+/*styking the body*/
 body {
 	background-color: black;
+	margin:0;
+	padding:0;
+	height:100%;
 }
 
+/*styling all h1 tags*/
 h1 {
 	text-align: center;
 	color:white;
 	margin:none;
 }
 
+/*styling all h2 tags*/
 h2 {
 	text-align: center;
 	color:white;
 }
 
+/*styling the paragraphs*/
 p {
 	text-align:center;
 	color:white;
 	font-weight:16px;
 }
 
-//*.navbar{
-	width:100%;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-*//
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color:white;
+}
+
+small {
+	text-align: center;
+}
+
+/*
+===============
+===============
+*/
 
 /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color:black;
+  border:#999;
 }
 
 /* Navbar links */
 #navbar a ul {
-  float: left;
-  display: block;
+  /*float: left;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   color: white;
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  background-color:black;
 }
 
+.navbar{
+	width:100%;
+	padding:0px;
+	background-color:#333;
+	border:none;
+}
 
 /* Page content */
 .content {
@@ -65,3 +109,15 @@ p {
   text-align:center;
 }
 
+.card {
+	background-color: #333;
+	padding:0px 0px 10px 0px;
+}
+
+.glyphicon {
+	text-align: right;
+}
+
+.row{
+	padding:10px;
+}
