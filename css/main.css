@@ -8,9 +8,8 @@ body {
 
 /*styling all h1 tags*/
 h1 {
-	text-align: center;
+	text-align:center;
 	color:white;
-	margin:none;
 }
 
 /*styling all h2 tags*/
@@ -26,6 +25,7 @@ p {
 	font-weight:16px;
 }
 
+/*styling unordered list*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -39,17 +39,18 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #333;
   text-align: center;
   padding: 16px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 li a:hover {
   color:white;
 }
 
-small {
+
+footer {
 	text-align: center;
 }
 
@@ -58,31 +59,58 @@ small {
 ===============
 */
 
-/* Style the navbar */
+/* Style the navbar, sticky bar */
 #navbar {
   overflow: hidden;
   background-color:black;
   border:#999;
 }
 
-/* Navbar links */
+/* Navbar links for sticky bar */
 #navbar a ul {
-  /*float: left;*/
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: white;
-  text-align: center;
+  color: #333;
+  /*text-align: center;*/
   padding: 14px;
   text-decoration: none;
   background-color:black;
+  border:#333;
 }
 
+/*sticky nav bar*/
+#navbar {
+	background-color: black;
+	border-bottom: 1px solid #333;
+}
+
+/*nav bar at top of page*/
 .navbar{
 	width:100%;
 	padding:0px;
 	background-color:#333;
 	border:none;
+}
+
+/*h1 tag in banner*/
+.banner {
+	border-bottom: 8px solid red;
+	display: inline-block;
+	padding:0 0 8px;
+	font-weight:900;
+	text-transform:uppercase;
+	margin-botton:16px;
+	font-size:40px;
+	line-height: 42px;
+}
+
+/*p tag in banner*/
+.stories{
+	font-weight: 500;
+	font-size:20px;
+	color:white;
+	margin-bottom: 32px;
 }
 
 /* Page content */
@@ -106,16 +134,39 @@ small {
 .btn-lg {
   background-color: red;
   color: white;
-  text-align:center;
+  border:white;
 }
 
+/*open in app button*/
+.btn1 {
+	background-color:black;
+	color:white;
+	border:1px solid white;
+	border-radius: 3px;
+	margin:10px;
+}
+
+/*sign up button in nav*/
+.btn2{
+	background-color:red;
+	color:white;
+	border:none;
+	border-radius: 2px;
+	margin:10px;
+}
+
+.btn btn-primary btn-lg {
+	text-align: center;
+}
+
+/*holds images and paragraphs in column*/
 .card {
 	background-color: #333;
-	padding:0px 0px 10px 0px;
+	padding:10px 10px 10px 10px;
 }
 
 .glyphicon {
-	text-align: right;
+	
 }
 
 .row{
