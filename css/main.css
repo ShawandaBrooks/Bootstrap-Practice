@@ -28,9 +28,10 @@ p {
 /*styling unordered list*/
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
-  overflow: hidden;
+  text-align:center;
+  display:inline-block;
 }
 
 li {
@@ -54,6 +55,7 @@ footer {
 	text-align: center;
 }
 
+
 /*
 ===============
 ===============
@@ -64,26 +66,36 @@ footer {
   overflow: hidden;
   background-color:black;
   border:#999;
+  margin: 0 50px 0 50px;
 }
 
 /* Navbar links for sticky bar */
-#navbar a ul {
+#navbar ul a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   color: #333;
-  /*text-align: center;*/
   padding: 14px;
   text-decoration: none;
   background-color:black;
   border:#333;
+  text-transform:;
 }
+
+
 
 /*sticky nav bar*/
 #navbar {
 	background-color: black;
 	border-bottom: 1px solid #333;
+	z-index:1;
+	text-align:center;
 }
+
+#navbar:hoover{
+	color:white;
+}
+
 
 /*nav bar at top of page*/
 .navbar{
@@ -95,15 +107,22 @@ footer {
 
 /*h1 tag in banner*/
 .banner {
-	border-bottom: 8px solid red;
-	display: inline-block;
-	padding:0 0 8px;
 	font-weight:900;
 	text-transform:uppercase;
-	margin-botton:16px;
+	margin-bottom:16px;
 	font-size:40px;
-	line-height: 42px;
+	line-height: 50%;
+	text-align:center;
 }
+
+/*for red border under text*/
+#line{
+	border-bottom: 11px solid red;
+	display:inline-block;
+	padding: 12px 0 11px;
+	width:30%;
+}
+
 
 /*p tag in banner*/
 .stories{
@@ -130,12 +149,13 @@ footer {
   padding-top: 60px;
 }
 
-/*sign up button*/
+/*sign up button at bottom of page*/
 .btn-lg {
   background-color: red;
   color: white;
   border:white;
 }
+
 
 /*open in app button*/
 .btn1 {
@@ -155,9 +175,6 @@ footer {
 	margin:10px;
 }
 
-.btn btn-primary btn-lg {
-	text-align: center;
-}
 
 /*holds images and paragraphs in column*/
 .card {
@@ -166,9 +183,32 @@ footer {
 }
 
 .glyphicon {
-	
+	margin:45px;
+	padding:0;
 }
 
 .row{
 	padding:10px;
 }
+
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
